@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PLTFM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;300;500;700&family=Inter:wght@200&family=Newsreader:wght@500;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont,
+          Segoe UI, Roboto, Oxygen, sans-serif;
+      }
+      .font-grotesk {
+        font-family: "Space Grotesk", sans-serif;
+      }
+      .font-inter {
+        font-family: "Inter Tight", sans-serif;
+      }
+      .font-newsreader {
+        font-family: "Newsreader", serif;
+      }
+    </style>
+  </head>
+  <body
+    class="md:bg-gradient-to-bl bg-gradient-to-b bg-no-repeat md:from-indigo-700 from-indigo-500 md:from-5% via-pink-200 md:via-pink-600 md:via-20% md:to-white-500 md:to-white md:to-40%"
+  >
+    <div class="container mx-auto px-6 md:px-0 py-10">
+      <header class="flex items-center justify-between">
+        <h1 class="text-2xl text-white md:text-black font-extrabold">PLTFM</h1>
+        <nav>
+          <ul class="flex space-x-4 text-white">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="flex flex-col md:mt-16">
+        <div
+          class="flex flex-col md:flex-row md:bg-transparent rounded-xl mt-8 md:mt-0 block"
+        >
+          <div
+            style="min-height: calc(100% + 100px)"
+            class="flex-col m-0 md:m-8 md:mt-24 w-full"
+          >
+            <div style="min-height: calc(100%+100px)" class="block">
+              <h1
+                class="text-transparent bg-clip-text bg-gradient-to-br from-white md:from-indigo-600 md:to-pink-400 to-white-600 md:text-7xl text-5xl mt-10 break-word tracking-tighter font-extrabold"
+              >
+                Hassle-free funding from<br />
+                <span
+                  id="typewriter-effect"
+                  class="font-newsreader text-transparent bg-clip-text bg-gradient-to-br from-black md:text-black md:to-pink-400 to-black md:text-7xl text-5xl mt-10 break-word"
+                >
+                  operator groups.
+                </span>
+              </h1>
+            </div>
+            <div class="mb-4 mt-0 md:mt-16 mb-16 md:mb-0">
+              <h2
+                class="font-inter text-1/2 md:text-xl text-black font-light mt-14 mb-8"
+              >
+                <span class="font-inter text-black md:dark:text-black"
+                  >PLTFM</span
+                >
+                abstracts the complexities of creating and managing angel
+                communities&mdash;so you can
+                <span class="text-black font-inter font-bold"
+                  >focus on backing startups.</span
+                >
+              </h2>
+            </div>
+          </div>
+          <div class="hidden md:block w-full h-full bg-black">
+            <div class="pt-6 md:p-8 text-center md:text-left">
+              <div>
+                <p class="text-white font-inter font-light">
+                  Sign up to join the waiting list!
+                </p>
+                <form name="prospectives" class="w-full md:mt-16 p-4" netlify>
+                  <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                      <label
+                        class="block uppercase tracking-wide text-white text-xs font-bold mb-2"
+                        for="grid-first-name"
+                      >
+                        First Name
+                      </label>
+                      <input
+                        name="firstname"
+                        class="font-inter appearance-none block w-full text-black py-3 px-4 mb-3 leading-tight focus:bg-white"
+                        id="grid-first-name"
+                        type="text"
+                        placeholder="Jane"
+                        required
+                      />
+                    </div>
+                    <div class="w-full md:w-1/2 px-3">
+                      <label
+                        class="block uppercase tracking-wide text-white text-xs font-bold mb-2"
+                        for="grid-last-name"
+                      >
+                        Last Name
+                      </label>
+                      <input
+                        name="lastname"
+                        class="font-inter appearance-none block w-full text-black py-3 px-4 leading-tight"
+                        id="grid-last-name"
+                        type="text"
+                        placeholder="Doe"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full px-3">
+                      <label
+                        class="block uppercase tracking-wide text-white text-xs font-bold mb-2"
+                        for="grid-email-address"
+                      >
+                        Email Address
+                      </label>
+                      <input
+                        name="email"
+                        class="font-inter appearance-none block w-full text-black py-3 px-4 mb-3 leading-tight"
+                        id="grid-email-address"
+                        type="email"
+                        placeholder="jane.doe@example.com"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap -mx-3 mb-2">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                      <label
+                        class="block uppercase tracking-wide text-white text-xs font-bold mb-2"
+                        for="grid-city"
+                      >
+                        City
+                      </label>
+                      <input
+                        name="city"
+                        class="font-inter appearance-none block w-full text-black py-3 px-4 leading-tight"
+                        id="grid-city"
+                        type="text"
+                        placeholder="London"
+                        required
+                      />
+                    </div>
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                      <label
+                        class="block uppercase tracking-wide text-white text-xs font-bold mb-2"
+                        for="grid-country"
+                      >
+                        Country
+                      </label>
+                      <input
+                        name="country"
+                        class="font-inter appearance-none block w-full text-black py-3 px-4 leading-tight"
+                        id="grid-city"
+                        type="text"
+                        placeholder="United Kingdom"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full px-3"></div>
+                  </div>
+                  <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full px-3">
+                      <label
+                        class="block uppercase tracking-wide text-white text-xs font-bold mb-2"
+                        for="grid-group-type"
+                      >
+                        Group Type
+                      </label>
+                      <div class="relative">
+                        <select
+                          name="grouptype"
+                          class="block appearance-none w-full text-gray-700 py-3 px-4 pr-8 leading-tight"
+                          id="grid-group-type"
+                        >
+                          <option value="syndicate">Syndicate</option>
+                          <option value="angel">Angel Investing Club</option>
+                          <option value="fundcollective">
+                            Fund Collective
+                          </option>
+                          <option value="undecided">Undecided</option>
+                        </select>
+                        <div
+                          class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+                        >
+                          <svg
+                            class="fill-current h-4 w-4"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap -mx-3 justify-center mt-2">
+                    <button
+                      class="font-inter bg-black border text-white font-bold py-2 px-4 focus:outline-none"
+                      type="submit"
+                    >
+                      Submit to join the waiting list!
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="md:hidden block w-full h-full bg-black">
+      <div class="pt-6 text-center md:text-left">
+        <div>
+          <p class="text-white font-inter font-light">
+            Sign up to join the waiting list!
+          </p>
+          <form name="prospectives" class="w-full md:mt-16 p-4" netlify>
+            <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label
+                  class="block uppercase tracking-wide text-white text-xs font-bold mb-2"
+                  for="grid-first-name"
+                >
+                  First Name
+                </label>
+                <input
+                  name="firstname"
+                  class="font-inter appearance-none block w-full text-black py-3 px-4 mb-3 leading-tight focus:bg-white"
+                  id="grid-first-name"
+                  type="text"
+                  placeholder="Jane"
+                  required
+                />
+              </div>
+              <div class="w-full md:w-1/2 px-3">
+                <label
+                  class="block uppercase tracking-wide text-white text-xs font-bold mb-2"
+                  for="grid-last-name"
+                >
+                  Last Name
+                </label>
+                <input
+                  name="lastname"
+                  class="font-inter appearance-none block w-full text-black py-3 px-4 leading-tight"
+                  id="grid-last-name"
+                  type="text"
+                  placeholder="Doe"
+                  required
+                />
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="w-full px-3">
+                <label
+                  class="block uppercase tracking-wide text-white text-xs font-bold mb-2"
+                  for="grid-email-address"
+                >
+                  Email Address
+                </label>
+                <input
+                  name="email"
+                  class="font-inter appearance-none block w-full text-black py-3 px-4 mb-3 leading-tight"
+                  id="grid-email-address"
+                  type="email"
+                  placeholder="jane.doe@example.com"
+                  required
+                />
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-2">
+              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label
+                  class="block uppercase tracking-wide text-white text-xs font-bold mb-2"
+                  for="grid-city"
+                >
+                  City
+                </label>
+                <input
+                  name="city"
+                  class="font-inter appearance-none block w-full text-black py-3 px-4 leading-tight"
+                  id="grid-city"
+                  type="text"
+                  placeholder="London"
+                  required
+                />
+              </div>
+              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label
+                  class="block uppercase tracking-wide text-white text-xs font-bold mb-2"
+                  for="grid-country"
+                >
+                  Country
+                </label>
+                <input
+                  name="country"
+                  class="font-inter appearance-none block w-full text-black py-3 px-4 leading-tight"
+                  id="grid-city"
+                  type="text"
+                  placeholder="United Kingdom"
+                  required
+                />
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="w-full px-3"></div>
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="w-full px-3">
+                <label
+                  class="block uppercase tracking-wide text-white text-xs font-bold mb-2"
+                  for="grid-group-type"
+                >
+                  Group Type
+                </label>
+                <div class="relative">
+                  <select
+                    name="grouptype"
+                    class="block appearance-none w-full text-gray-700 py-3 px-4 pr-8 leading-tight"
+                    id="grid-group-type"
+                  >
+                    <option value="syndicate">Syndicate</option>
+                    <option value="angel">Angel Investing Club</option>
+                    <option value="fundcollective">Fund Collective</option>
+                    <option value="undecided">Undecided</option>
+                  </select>
+                  <div
+                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+                  >
+                    <svg
+                      class="fill-current h-4 w-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 justify-center mt-2">
+              <button
+                class="font-inter bg-black border text-white font-bold py-2 px-4 focus:outline-none"
+                type="submit"
+              >
+                Submit to join the waiting list!
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="bg-black md:bg-transparent items-center justify-center text-center pt-8"
+    >
+      <div class="font-inter w-full h-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <span
+          class="font-inter block text-sm text-white md:text-black sm:text-center"
+          >&copy; 2023
+          <a href="https://www.pltfm.co/" class="font-inter hover:underline"
+            >PLTFM Technologies Limited</a
+          >.</span
+        >
+      </div>
+    </footer>
+    <script type="text/javascript">
+      const variants = [
+        "operator groups.",
+        "syndicates.",
+        "angel clubs.",
+        "communities.",
+        "your networks.",
+        "collectives.",
+      ];
+
+      const effectSpan = document.querySelector("#typewriter-effect");
+      let index = 0;
+      setInterval(function () {
+        effectSpan.innerText = variants[index++ % variants.length];
+      }, 2500);
+    </script>
+  </body>
+</html>
